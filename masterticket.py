@@ -9,7 +9,7 @@ print("There are {} tickets left!".format(tickets_remaining))
 name = input("What is your name?  ")
 
 # prompt the user by name and ask how many tickets they would like
-number_tickets = input("How many tickets would you like? {}?  ".format(name))
+number_tickets = input("How many tickets would you like {}?  ".format(name))
 number_tickets = int(number_tickets)
 
 # calculate the price (number of tickets x price) and assign to a variable
