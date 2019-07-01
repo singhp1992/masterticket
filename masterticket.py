@@ -4,7 +4,7 @@ TICKET_PRICE = 10
 tickets_remaining = 100 
 
 def calculate_price(number_of_tickets):
-    return number_of_tickets * TICKET_PRICE
+    return (number_of_tickets * TICKET_PRICE) + SERVICE_CHARGE
 
 while tickets_remaining >= 1:
     print("There are {} tickets left!".format(tickets_remaining))
