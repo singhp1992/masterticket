@@ -20,3 +20,7 @@ print("Total: {}".format(amount))
 
 # prompt continue y/n
 
+    # YES - print "Sold!"
+
+    # decrement the tickets remaining by the number of tickets purchased
+
