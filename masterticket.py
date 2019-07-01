@@ -16,3 +16,4 @@ number_tickets = int(number_tickets)
 amount = number_tickets + TICKET_PRICE
 
 # output the price to the screen
+print("Total: {}".format(amount_due))
