@@ -19,7 +19,7 @@ while tickets_remaining >= 1:
         print("There seems to be an issue, try using a number!".format(err))
     else:
         amount = calculate_price(number_tickets)
-        print("Total: {}".format(amount))
+        print("Total: €{}".format(amount))
         continue_yn = raw_input("Do you want to proceed? Y/N  ")
         if continue_yn.lower() == "y": 
             # ask for credit card info
