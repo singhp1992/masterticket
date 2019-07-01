@@ -22,6 +22,8 @@ print("Total: {}".format(amount))
 continue = raw_input("Do you want to proceed? Y/N  ")
 
 # YES - print "Sold!"
+if continue.lower() == "y": 
+    print("Sold!")
 
     # decrement the tickets remaining by the number of tickets purchased
 
