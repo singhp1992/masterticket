@@ -2,6 +2,9 @@ TICKET_PRICE = 10
 
 tickets_remaining = 100 
 
+def calculate_price(number_of_tickets):
+    return number_of_tickets * TICKET_PRICE
+
 while tickets_remaining >= 1:
     print("There are {} tickets left!".format(tickets_remaining))
     name = raw_input("What is your name? ").capitalize()
@@ -22,5 +25,5 @@ while tickets_remaining >= 1:
             print("Sold!")
             tickets_remaining -= number_tickets
         else: 
-            print("Thank you for your time, {}".format(name))
+            print("Thank you for your time, {} :)".format(name))
 print("Sorry the tickets are sold out! :(")
