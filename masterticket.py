@@ -9,15 +9,18 @@ while tickets_remaining >= 1:
     # Value Error
     try: 
         number_tickets = int(number_tickets)
-    except ValueError: 
-        print("There seems to be an issue, try using a number!")
-    amount = number_tickets * TICKET_PRICE
-    print("Total: {}".format(amount))
-    continue_yn = raw_input("Do you want to proceed? Y/N  ")
-    if continue_yn.lower() == "y": 
-        # ask for credit card info
-        print("Sold!")
-        tickets_remaining -= number_tickets
-    else: 
-        print("Thank you for your time, {}".format(name))
+        if number_tickets > tickets_remaining:
+            raise ValueError("There are only {} tickets available".format(tickets_remaining))
+    except ValueError as err: 
+        print("There seems to be an issue, try using a number!".format(err))
+    else:
+        amount = calculate_price(number_tickets)
+        print("Total: {}".format(amount))
+        continue_yn = raw_input("Do you want to proceed? Y/N  ")
+        if continue_yn.lower() == "y": 
+            # ask for credit card info
+            print("Sold!")
+            tickets_remaining -= number_tickets
+        else: 
+            print("Thank you for your time, {}".format(name))
 print("Sorry the tickets are sold out! :(")
