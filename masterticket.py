@@ -19,6 +19,7 @@ amount = num_tickets * TICKET_PRICE
 print("Total: {}".format(amount))
 
 # prompt continue y/n
+continue = raw_input("Do you want to proceed? Y/N  ")
 
 # YES - print "Sold!"
 
