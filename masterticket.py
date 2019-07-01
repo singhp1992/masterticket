@@ -2,6 +2,11 @@ TICKET_PRICE = 10
 
 tickets_remaining = 100 
 
+# code runs until no more tickets
+
+
+
+
 #output how many tickets are remaining using the tickets_remaining variable
 print("There are {} tickets left!".format(tickets_remaining))
 
@@ -30,3 +35,5 @@ if continue_yn.lower() == "y":
 else: 
     print("Thank you for your time, {}".format(name))
 
+
+# tell user tickets are gone
