@@ -6,11 +6,11 @@ tickets_remaining = 100
 print("There are {} tickets left!".format(tickets_remaining))
 
 # gather user name and assign to a variable
-name = raw_input("What is your name? ") 
+name = raw_input("What is your name? ").capitalize()
 
 # prompt the user by name and ask how many tickets they would like
 number_tickets = raw_input("How many tickets would you like, {}?  ".format(name))
-number_tickets = int(num_tickets)
+number_tickets = int(number_tickets)
 
 # calculate the price (number of tickets x price) and assign to a variable
 amount = number_tickets * TICKET_PRICE
@@ -19,10 +19,10 @@ amount = number_tickets * TICKET_PRICE
 print("Total: {}".format(amount))
 
 # prompt continue y/n
-continue = raw_input("Do you want to proceed? Y/N  ")
+continue_yn = raw_input("Do you want to proceed? Y/N  ")
 
 # YES - print "Sold!"
-if continue.lower() == "y": 
+if continue_yn.lower() == "y": 
     print("Sold!")
     # decrement the tickets remaining by the number of tickets purchased
     tickets_remaining -= number_tickets
