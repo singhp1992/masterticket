@@ -27,5 +27,6 @@ if continue.lower() == "y":
     # decrement the tickets remaining by the number of tickets purchased
     tickets_remaining -= number_tickets
 # NO - thank you, name
-
+else: 
+    print("Thank you for your time, {}".format(name))
 
