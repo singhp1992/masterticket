@@ -10,7 +10,6 @@ while tickets_remaining >= 1:
     print("There are {} tickets left!".format(tickets_remaining))
     name = raw_input("What is your name? ").capitalize()
     number_tickets = raw_input("How many tickets would you like, {}?  ".format(name))
-    # Value Error
     try: 
         number_tickets = int(number_tickets)
         if number_tickets > tickets_remaining:
@@ -22,7 +21,6 @@ while tickets_remaining >= 1:
         print("Total: ${}".format(amount))
         continue_yn = raw_input("Do you want to proceed? Y/N  ")
         if continue_yn.lower() == "y": 
-            # ask for credit card info
             print("Sold!")
             tickets_remaining -= number_tickets
         else: 
