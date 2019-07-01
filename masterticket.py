@@ -17,3 +17,6 @@ amount = num_tickets * TICKET_PRICE
 
 # output the price to the screen
 print("Total: {}".format(amount))
+
+# prompt continue y/n
+
