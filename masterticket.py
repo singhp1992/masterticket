@@ -6,6 +6,7 @@ while tickets_remaining >= 1:
     print("There are {} tickets left!".format(tickets_remaining))
     name = raw_input("What is your name? ").capitalize()
     number_tickets = raw_input("How many tickets would you like, {}?  ".format(name))
+    # Value Error
     number_tickets = int(number_tickets)
     amount = number_tickets * TICKET_PRICE
     print("Total: {}".format(amount))
